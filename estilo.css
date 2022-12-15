@@ -1,0 +1,872 @@
+/* Antes que começe a observar este css de 700 linhas. 
+Digo que usei varias formas para obter o mesmo resultado, 
+como posicionar uma imagem à esquerda, usei varias formar para posicionar por varios motivos 
+como a imagem era muito grande e precisava de um tratamento especifico.*/
+/* Pagina */
+body {
+
+  overflow-x: hidden;
+  margin: 0px auto; /* Para aproveita 100% da pagina */
+  padding: 0px; /* Uma especie de moldura invisivel */
+  font-family: Verdana;
+  overflow-anchor: 100%;
+  width:90%;
+  min-width:600px;
+  max-width:2000px;
+    
+}
+
+/* A posicionar o logotipo do Cabeçalho */
+
+.imglogo {
+
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 45px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 200px;
+
+}
+
+/* A posicionar o logotipo do Online do Cabeçalho */
+
+.imglogoonline {
+
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 35px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  padding-right: 200px;
+
+}
+
+/* Papel de Parede */
+.pp {
+
+  background-color: #1B1B1B;
+  background-image: url(wallmain.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+
+}
+
+.ppon {
+
+  background-color: #1B1B1B;
+  background-image: url(wallon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  background-attachment: fixed;
+
+}
+
+
+/* A preparar o Cabeçalho */
+
+.cabecalho {
+
+  opacity: 0%;
+  width: 90%;
+  background-color: black;
+  font-size: 30px;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-left: 1px;
+  border-right: 1px;
+  border-color: white;
+  border-style: solid;
+  position: fixed;
+  z-index: 2;
+  animation: forwards;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-name: animacao;
+    
+}
+
+/* A preparar "Botões" no Cabeçalho */
+
+.cabecalho > a{
+
+  height: 80px;
+  margin-top: 0px;
+  color: white;
+  font-size: 20px;
+  padding-top: 100%;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  position: relative;
+  bottom: 18px; 
+  font-weight: bold;
+    
+}
+
+/* A preparar a div introdutoria da Cidade e da Historia */
+
+.lossantos{
+
+  margin-top: 100px;
+  margin-left: 150px;
+  width: 575px;
+  display: inline-block;
+    
+}
+
+/* A posicionar o Video */
+
+.lossantosdois{
+
+  margin-left: 20px;
+  display: inline-block;
+  
+}
+
+/* Mais posicionamento sobre o video */
+
+.lossantosdois > iframe{
+
+  position: relative;
+  top: 15px;
+  animation: forwards;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho, cor, e animação para um titulo. Será utilizado para o resto do site */
+
+.lossantos > h1 {
+  
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  animation: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+}
+
+/* A definir um tamanho, cor, e animação para uma frase. Será utilizado para o resto do site */
+
+.lossantos > p {
+  font-size: 20px;
+  color: white;
+  animation: forwards;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+}
+
+/* A definir um tamanho, cor, e animação para um botão. Será utilizado para o resto do site */
+
+.lossantos > button{
+  animation: forwards;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+}
+
+/* A preparar a DIV para introduzir os personagens */
+
+.personagens{
+    
+  margin-top: 100px;
+  margin-left: 150px;
+  width: 575px;
+  display: inline-block;
+
+}
+
+/* A definir um tamanho e animação para a imagem dos personagens */
+
+.personagens > img{
+
+  width: 575px;
+  display: inline-block;
+  animation: forwards;
+  animation-delay: 7s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+    
+}
+
+/* A definir um tamanho para a DIV do texto sobre os personagens */
+
+.personagenstexto{
+  
+  width: 575px;
+  display: inline-block;
+  margin-left: 10px;
+    
+}
+
+/* A definir um tamanho, cor, e animação para um botão. */
+
+.personagenstexto > h1 {
+
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  padding: 0%;
+  margin: 0%;
+  animation: forwards;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+}
+
+/* A definir um tamanho, cor, e animação para uma frase. */
+
+.personagenstexto > p {
+
+  font-size: 20px;
+  color: white;
+  animation: forwards;
+  animation-delay: 6.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+}
+
+/* A definir um tamanho, cor, e animação para um botão. */
+
+.personagenstexto > button{
+
+  animation: forwards;
+  animation-delay: 9s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho e cor para a DIV do texto sobre sobre o Modo Online */
+
+.onpersonagenstexto{
+
+    margin-top: 100px;
+    margin-left: 150px;
+    width: 575px;
+    display: inline-block;
+    color: white;
+
+}
+
+/* A definir um tamanho, cor, e animação para um titulo.*/
+
+.onpersonagenstexto > h1{
+
+  font-size: 35px;
+  color: white;
+  animation: forwards;
+  animation-delay: 11s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho, cor, e animação para uma frase. */
+
+.onpersonagenstexto > p{
+
+  font-size: 20px;
+  color: white;
+  animation: forwards;
+  animation-delay: 11.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho, cor, e animação para um botão. */
+
+.onpersonagenstexto > button{
+
+  animation: forwards;
+  animation-delay: 13s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir a DIV que vai conter a IMG dos bonecos do GTA Online */
+
+.onpersonagensimagem{
+
+  margin-left: 10px;
+  display: inline-block;
+  animation: forwards;
+  animation-delay: 13s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+}
+
+/* A definir um tamanho para a IMG dos bonecos */
+
+.onpersonagensimagem > img{
+
+  width: 625px;
+  display: inline-block;
+  position: relative;
+  bottom: 70px
+
+}
+
+/* A definir a DIV que vai conter a IMG das capas do jogo */
+
+.versaoimagem{
+  
+  width: 400px;
+  height: 440px;
+  margin-left: 150px;
+  display: inline-block;
+
+}
+
+/* A definir um tamanho para a IMG das capas */
+
+.versaoimagem > img{
+ 
+  width: 100%;
+  animation: forwards;
+  animation-delay: 15s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho para a DIV do texto sobre os personagens */
+
+.versaotexto{
+
+  color: white;
+  display: inline-block;
+  width: 700px;
+  margin-top: 300px;
+  
+}
+
+/* A definir um tamanho, cor, e animação para um titulo. */
+
+.versaotexto > h1{
+
+  font-size: 35px;
+  position: relative;
+  bottom: 250px;
+  animation: forwards;
+  animation-delay: 13s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho, cor, e animação para um botão. */
+
+.versaotexto > p{
+
+  font-size: 20px;
+  position: relative;
+  bottom: 225px;
+  animation: forwards;
+  animation-delay: 13.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+}
+
+/* A definir um tamanho, cor, e animação para um botão. */
+
+.versaotexto > button{
+
+  font-size: 20px;
+  position: relative;
+  bottom: 150px;
+  animation: forwards;
+  animation-delay: 17s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+}
+
+/* A definir um tamanho para a DIV do texto sobre os personagens */
+
+.pagpersonagens{
+
+  width: 850px;
+  padding-top: 20px;
+  display: inline-block;
+
+}
+
+/* A definir um tamanho, cor, e animação para um titulo.*/
+
+.pagpersonagens > h1{
+
+  font-size: 35px;
+  color: white;
+  animation: forwards;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho, cor, e animação para uma frase.*/
+
+.pagpersonagens > p{
+
+  font-size: 20px;
+  color: white;
+  animation: forwards;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+}
+
+/* A definir um tamanho e animação para uma imagem de cada personagem.*/
+
+.imgdiv{
+
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 4%;
+  animation: forwards;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+
+}
+
+/* A definir um tamanho para cada imagem*/
+
+.tamanhoimg{
+  width: 88%;
+}
+
+/* A definir uma animação para o IFRAME, trailer sobre os personagens*/
+
+.iframeperso{
+
+  padding-top: 80px;
+  text-align: center;
+  animation: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* Estilo para os botões */
+
+.estilobotao {
+	background-color:white;
+	border-radius:15px;
+	border:3px solid grey;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:19px;
+	font-weight:bold;
+	padding:15px 26px;
+	text-decoration:none;
+	text-shadow:0px 1px 10px #ffffff;
+  transition: 0.5s;
+  text-decoration: none;
+    
+}
+
+.estilobotao > a:visited {
+
+  text-decoration: none;
+  color: black;
+    
+}
+
+.estilobotao > a {
+
+  text-decoration: none;
+  color: black;
+    
+}
+
+.estilobotao:hover {
+	    
+  transition: 0.5s;
+  border-color: white;
+  background-color: #317401;
+
+}
+
+/* Borda para todas as IFRAMEs */
+
+iframe{
+
+  border: 1px solid white;
+  
+}
+
+/* Um estilo para o meu nome */
+
+.autor{
+
+  text-align: center;
+  color: white;
+
+}
+
+/* Estilo para a IFRAME do trailer sobre a Historia */
+
+.trailerhistoria{
+
+  text-align: center;
+  padding-top: 80px;
+  animation: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* Estilo para a DIV do texto */
+
+.resumohistoria{
+
+  color: white;
+  
+}
+
+/* A definir um tamanho, cor, e animação para um titulo. */
+
+.resumohistoria > h1{
+
+  text-align: center;
+  font-size: 35px;
+  animation: forwards;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+
+}
+
+/* A definir um tamanho, cor, e animação para uma frase. */
+
+.resumohistoria > p{
+
+  font-size: 20px;
+  animation: forwards;
+  animation-delay: 3.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  text-align: justify;
+
+}
+
+/* Estilo para a introdução do GTA Online */
+
+.introducaogtaonline{
+
+  padding-top: 80px;
+  width: 500px;
+  display: inline-block;
+
+}
+
+/* A definir um tamanho e cor para um titulo. */
+
+.introducaogtaonline > h1{
+
+  font-size: 35px;
+  color: white;
+  animation: forwards;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A definir um tamanho e cor para uma frase. */
+
+.introducaogtaonline > p{
+
+  font-size: 20px;
+  color: white;
+  animation: forwards;
+  animation-delay: 2.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A posicionar o Video do Trailer do GTA Online */
+
+.iframegtaonline{
+
+  margin-left: 120px;
+  top: 80px;
+  display: inline-block;
+  position: relative;
+  animation: forwards;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* A posicionar uma imagem do GTA Online da cração de personagem */
+
+.onlinepersonagem{
+
+  width: 500px;
+  padding-top: 100px;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+  
+}
+
+/* A definir um tamanho, cor, e animação para um titulo.*/
+
+.onlinepersonagem > h1{
+
+  color: white;
+  font-size: 35px;
+  animation: forwards;
+  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+.onlinepersonagem > p{
+
+  color: white;
+  font-size: 20px;
+  animation: forwards;
+  animation-delay: 5.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+.onlinepersonagem > img{
+
+  color: white;
+  font-size: 20px;
+  
+}
+
+
+/* A definir um tamanho, cor, e animação para uma frase. */
+
+.imgpersonagemonline{
+  
+  padding-top: 120px;
+  width: 50%;
+  display: inline-block;
+  position: relative;
+  margin-left: 120px;
+  animation: forwards;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+  
+}
+
+/* A posicionar uma imagem do GTA Online de sobre dinheiro*/
+
+.imgpersonagemdinheiro{
+
+  display: inline-block;
+  padding-top: 120px;
+  color: aqua;
+  animation: forwards;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+
+}
+
+/* A definir tamanho para a imagem */
+
+.imgpersonagemdinheiro > img{
+
+  display: inline-block;
+  width: 40%;
+  animation: forwards;
+  animation-delay: 8s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+
+}
+
+/* A definir tamanho para o texto sobre o dinheiro */
+
+.sobredinheiro{
+
+  display: inline-block;
+  width: 500px;
+  color: white;
+  padding-left: 100px;
+
+}
+
+.sobredinheiro > h1{
+
+  font-size: 35px;
+  display: inline-block;
+  animation: forwards;
+  animation-delay: 9s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+.sobredinheiro > p{
+
+  font-size: 20px;
+  display: inline-block;
+  animation: forwards;
+  animation-delay: 9.5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* DIV para as versões */
+
+.versoesi{
+
+  padding: 100px;
+  color: white;
+  text-align: center;
+  animation: forwards;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+/* DIV para a jogabilidade */
+
+.jogabiliadedivs{
+
+  padding-top: 170px;
+  width: 600px;
+  color: white;
+  display: inline-block;
+  animation: forwards;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+  
+}
+
+.jogabiliadedivs > h1{
+
+  font-size: 35px;
+
+}
+
+.jogabiliadedivs > p{
+
+  font-size: 20px;
+  
+}
+
+.jogabiliadedivsimg{
+  width: 500px;
+  float: right;
+  position: relative;
+  padding-top: 45px;
+  animation: forwards;
+  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-name: animacao;
+  opacity: 0%;
+
+}
+
+.jogabiliadedivsimg > img{
+
+  width: 100%;
+  display: inline-block;
+
+}
+
+
+
+
+
+/* Animação para deixar mais bonito :) */
+
+@keyframes animacao {
+  from {
+    opacity: 0%;
+  }
+  
+  to {
+    opacity: 100%;
+  }
+
+    
+}
+
+
+  
